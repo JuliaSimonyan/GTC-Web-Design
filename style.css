@@ -1,5 +1,56 @@
 body {
-    font-family: "Montserrat", serif;
+    font-family: "Montserratarm", sans-serif;
+    font-weight: 300;
+}
+@font-face {
+  font-family: "Montserratarm";
+  src: url('fonts/Montserratarm-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserratarm";
+  src: url('fonts/Montserratarm-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserratarm";
+  src: url('fonts/Montserratarm-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserratarm";
+  src: url('fonts/Montserratarm-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserratarm";
+  src: url('fonts/Montserratarm-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserratarm";
+  src: url('fonts/Montserratarm-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserratarm";
+  src: url('fonts/Montserratarm-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.container {
+  margin: 10px 5%;
 }
 
 .hero-section {
@@ -91,25 +142,33 @@ body {
 body {
     background-color: #1e1e1e;
     color: #fff;
-    font-family: Arial, sans-serif;
   }
-
   .section-title {
+    color: #000;
     font-size: 1.8rem;
-    font-weight: bold;
     margin-bottom: 0.5rem;
+  }
+  .section-title1 {
+    color: #ffffff !important;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .section-subtitle1 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
   }
 
   .section-subtitle {
     font-size: 1rem;
-    color: #b5b5b5;
+    color: #000000;
     margin-bottom: 1.5rem;
   }
 
   .scroll-container {
-    margin-right: -100px;
+    margin-right: -38.5%;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     overflow-x: auto;
     padding-bottom: 1rem;
     cursor: grab;
@@ -157,4 +216,116 @@ body {
   .card-text {
     color: #b5b5b5;
     font-size: 0.9rem;
+  }
+
+  .discover-section {
+    position: relative;
+    background-image: url('Images/view1.png'); /* Replace with actual background image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    height: 784px;
+    min-height: 884px;
+  }
+
+  /* Overlay box with title and button */
+  .discover-overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    max-width: 700px;
+    border-top-right-radius: 200px;
+    height: 400px;
+    color: #333;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .discover-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* Decorative Art Styling */
+  .decorative-art {
+    position: absolute;
+    right: 50px;
+    top: 5%;
+    width: 650px;
+    height: 700px;
+    background-image: url('Images/Frame.png'); /* Replace with actual decorative image URL */
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* Button styling */
+  .btn-custom {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .btn-custom:hover {
+    background-color: #555;
+  }
+  .coupon-section {
+    width: 80%;
+    height: 500px;
+    margin: 0 5%;
+    border-radius: 30px;
+    margin-bottom: 50px;;
+    background-image: url('Images/image\ 4.png'); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    position: relative;
+    padding: 5rem 0;
+    text-align: left;
+    font-weight: 300;
+  }
+
+  .coupon-overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    max-width: 400px;
+    border-radius: 15px;
+  }
+  .footer {
+    background-color: #000; /* Black background */
+    color: #fff;            /* White text */
+    padding: 40px 0;        /* Spacing for the footer */
+    width: 100%;            /* Ensure full width */
+  }
+
+  .footer-logo {
+    margin-left: 15%;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .footer-section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  /* Link styling for the footer */
+  .footer-link {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .footer-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  /* Ensure padding inside columns */
+  .footer-contact p, .footer-about p, .footer-links p {
+    margin: 5px 0;
   }
