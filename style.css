@@ -57,7 +57,7 @@ body {
     background-image: url('Images/header-background.jpeg'); 
     background-size: 110%;
     background-clip:padding-box;
-    background-position:center -180vh;
+    background-position:center center;
     color: white;
     height: 90vh;
     position: relative;
@@ -75,8 +75,30 @@ body {
     left: 0;
     right: 0;
     background: rgb(255,255,255);
-    background: linear-gradient(110deg, rgba(255, 255, 255, 0.18) 0%, rgba(0, 0, 0, 0.874) 68%);
+    background: linear-gradient(110deg, rgba(255, 255, 255, 0.261) 0%, rgba(0, 0, 0, 0.878) 68%);
 }
+@media (max-width: 992px) {
+  .hero-section {
+      background-size: cover; /* Switch to cover for responsiveness */
+      background-position: center; /* Center image */
+      height: 70vh; /* Slightly smaller height for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+      height: 60vh; /* Reduce height on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+      background-size: cover; /* Ensure image fully covers the container */
+      background-position: center; /* Keep centered */
+      height: 50vh; /* Smaller height for mobile screens */
+  }
+}
+
 
 .hero-content {
     position: relative;
@@ -102,6 +124,13 @@ body {
     border-radius: 20px;
     padding: 0.5rem 1.5rem;
     font-weight: bold;
+}
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+position: fixed;
 }
 .navbar-brand img{
     width: 75px;
@@ -133,6 +162,31 @@ body {
     margin-left: 20px; 
 }
 
+@media (max-width: 992px) {
+  /* On medium and smaller screens, adjust navbar items */
+  .navbar-nav .nav-item {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* On smaller screens, make the navbar collapse into a hamburger */
+  .navbar-nav {
+    margin-top: 10px;
+  }
+  .navbar-toggler {
+    border-color: white;
+  }
+  .navbar-collapse {
+    justify-content: flex-start;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 5px;
+  }
+  .navbar-nav .nav-link {
+    padding: 8px 0;
+  }
+}
 
 .ml-auto .nav-link {
     margin-right: 15px; 
@@ -164,18 +218,18 @@ body {
     color: #000000;
     margin-bottom: 1.5rem;
   }
-
   .scroll-container {
-    margin-right: -38.5%;
     display: flex;
-    gap: 2rem;
+    gap: 1rem; 
     overflow-x: auto;
-    padding-bottom: 1rem;
-    cursor: grab;
-    padding-top: 1rem;
-    margin-top: 1rem;
+    padding: 1rem 0;
+    margin-left: 0 20px;
+    width: 100%;
     border-top: 2px solid #333;
-  }
+}
+
+
+
 
   .scroll-container::-webkit-scrollbar {
     display: none; 
