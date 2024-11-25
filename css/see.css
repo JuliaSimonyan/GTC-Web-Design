@@ -149,20 +149,21 @@
 
 /* Card Styles */
 .card {
+    width: 400px;
+    height: 300px !important;
     flex: 0 0 auto; /* Prevent shrinking or wrapping */
-    width: 350px; /* Fixed width for all cards */
     position: relative;
     border: none;
-    border-radius: 8px;
     transition: transform 0.2s ease;
 }
 
 
 .card img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
     filter: brightness(70%);
-    border-radius: 8px;
+    border-radius: 0;
 }
 
 .card-body {
@@ -175,7 +176,7 @@
 .card-title {
     font-size: 1rem;
     font-weight: bold;
-    color: #fff;
+    color: #fff !important;
 }
 
 .card-text {
