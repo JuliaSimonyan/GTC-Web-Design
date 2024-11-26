@@ -33,9 +33,19 @@
                     </ul>
                 </div>
                 <div class="ml-auto d-flex">
-                    <a class="nav-link mr-3" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <div class="search-container">
+                        <a class="nav-link mr-3 search-icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <input type="text" class="search-input" placeholder="Search...">
+                    </div>
                     <a class="nav-link mr-3" href="#"><i class="fa-regular fa-bookmark"></i></a>
-                    <a class="nav-link" href="#">ENG <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="language-dropdown">
+                        <a class="nav-link" href="#">ENG <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#">ENG</a>
+                            <a href="#">ARM</a>
+                            <a href="#">RUS</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,10 +73,9 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <h2 class="summer-title">Summer in Gyumri</h2>
-                <a href="#" class="see-more-link">See More</a>
             </div>
             <p class="description-text">Enjoy a warm day in Gyumri, enjoy great music and food, or explore Gyumri's fascinating museums.</p>
-
+            <a href="#" class="see-more-link-black">See More<span class="arrow"> &#8702;</span></a>
             <!-- Cards Section -->
             <div class="row card-container">
                 <!-- Card 1 -->
@@ -107,14 +116,14 @@
             <div class="section">
                 <div class="d-flex justify-content-between align-items-center">
                     <h2 class="section-heading">Activities</h2>
-                    <a href="#" class="see-more">See More</a>
                 </div>
                 <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="see-more-link-black">See More<span class="arrow"> &#8702;</span></a>
                 <div class="scroll-container">
                     <!-- Card 1 -->
                     <div class="card">
                         <span class="category-tag cultural">Cultural</span>
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Gyumri Drama Theatre">
+                        <img src="../Images/place1.jpeg" class="card-img-top" alt="Gyumri Drama Theatre">
                         <div class="card-body">
                             <h5 class="card-title">Gyumri Drama Theatre</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet</p>
@@ -123,7 +132,7 @@
                     <!-- Card 2 -->
                     <div class="card">
                         <span class="category-tag art">Art</span>
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Museum Nights">
+                        <img src="../Images/place2.jpeg" class="card-img-top" alt="Museum Nights">
                         <div class="card-body">
                             <h5 class="card-title">Museum Nights</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet</p>
@@ -132,7 +141,7 @@
                     <!-- Card 3 -->
                     <div class="card">
                         <span class="category-tag concerts">Concerts</span>
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="The Day of Gyumri">
+                        <img src="../Images/place3.jpeg" class="card-img-top" alt="The Day of Gyumri">
                         <div class="card-body">
                             <h5 class="card-title">The Day of Gyumri</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet</p>
@@ -141,7 +150,7 @@
                     <!-- Card 4 -->
                     <div class="card">
                         <span class="category-tag activity">Activity Type</span>
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Gyumri Drama Theatre">
+                        <img src="../Images/place4.jpeg" class="card-img-top" alt="Gyumri Drama Theatre">
                         <div class="card-body">
                             <h5 class="card-title">Gyumri Drama Theatre</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet</p>
@@ -150,7 +159,7 @@
                     <!-- Card 5 -->
                     <div class="card">
                         <span class="category-tag art">Art</span>
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Museum Nights">
+                        <img src="../Images/place5.jpeg" class="card-img-top" alt="Museum Nights">
                         <div class="card-body">
                             <h5 class="card-title">Museum Nights</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet</p>
@@ -159,7 +168,7 @@
                     <!-- Card 6 -->
                     <div class="card">
                         <span class="category-tag concerts">Concerts</span>
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="The Day of Gyumri">
+                        <img src="../Images/place1.jpeg" class="card-img-top" alt="The Day of Gyumri">
                         <div class="card-body">
                             <h5 class="card-title">The Day of Gyumri</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet</p>
@@ -168,7 +177,7 @@
                     <!-- Card 7 -->
                     <div class="card">
                         <span class="category-tag activity">Activity Type</span>
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Gyumri Drama Theatre">
+                        <img src="../Images/place2.jpeg" class="card-img-top" alt="Gyumri Drama Theatre">
                         <div class="card-body">
                             <h5 class="card-title">Gyumri Drama Theatre</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet</p>
@@ -181,21 +190,21 @@
         <div class="section mb-1 ms-6">
             <div class="d-flex justify-content-between align-items-center">
                 <h2 class="section-heading">Tourist Attractions</h2>
-                <a href="#" class="see-more">See More</a>
             </div>
             <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="see-more-link-black">See More<span class="arrow"> &#8702;</span></a>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Gyumri Drama Theatre">
+                        <img src="../Images/place1.jpeg" class="card-img-top" alt="Gyumri Drama Theatre">
                         <div class="card-body">
                             <h5 class="card-title">Gyumri Drama Theatre</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Underground Art">
+                        <img src="../Images/place2.jpeg" class="card-img-top" alt="Underground Art">
                         <div class="card-body">
                             <h5 class="card-title">Gyumri's Underground Art Spaces and Galleries</h5>
                         </div>
@@ -203,7 +212,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Gallery of Mariam">
+                        <img src="../Images/place5.jpeg" class="card-img-top" alt="Gallery of Mariam">
                         <div class="card-body">
                             <h5 class="card-title">Gallery of Mariam and Eranuhi Aslamazyan Sisters</h5>
                         </div>
@@ -216,21 +225,21 @@
         <div class="section mb-1 ms-6">
             <div class="d-flex justify-content-between align-items-center">
                 <h2 class="section-heading">Excursion</h2>
-                <a href="#" class="see-more">See More</a>
             </div>
             <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="see-more-link-black">See More<span class="arrow"> &#8702;</span></a>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Gyumri Drama Theatre">
+                        <img src="../Images/place1.jpeg" class="card-img-top" alt="Gyumri Drama Theatre">
                         <div class="card-body">
                             <h5 class="card-title">Gyumri Drama Theatre</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Underground Art">
+                        <img src="../Images/place2.jpeg" class="card-img-top" alt="Underground Art">
                         <div class="card-body">
                             <h5 class="card-title">Gyumri's Underground Art Spaces and Galleries</h5>
                         </div>
@@ -238,15 +247,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Gallery of Mariam">
-                        <div class="card-body">
-                            <h5 class="card-title">Gallery of Mariam and Eranuhi Aslamazyan Sisters</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Gallery of Mariam">
+                        <img src="../Images/place5.jpeg" class="card-img-top" alt="Gallery of Mariam">
                         <div class="card-body">
                             <h5 class="card-title">Gallery of Mariam and Eranuhi Aslamazyan Sisters</h5>
                         </div>
@@ -258,21 +259,21 @@
         <div class="section mb-1 ms-6">
             <div class="d-flex justify-content-between align-items-center">
                 <h2 class="section-heading">Shopping</h2>
-                <a href="#" class="see-more">See More</a>
             </div>
             <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="see-more-link-black">See More<span class="arrow"> &#8702;</span></a>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Gyumri Drama Theatre">
+                        <img src="../Images/place1.jpeg" class="card-img-top" alt="Gyumri Drama Theatre">
                         <div class="card-body">
                             <h5 class="card-title">Gyumri Drama Theatre</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Underground Art">
+                        <img src="../Images/place2.jpeg" class="card-img-top" alt="Underground Art">
                         <div class="card-body">
                             <h5 class="card-title">Gyumri's Underground Art Spaces and Galleries</h5>
                         </div>
@@ -280,15 +281,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Gallery of Mariam">
-                        <div class="card-body">
-                            <h5 class="card-title">Gallery of Mariam and Eranuhi Aslamazyan Sisters</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Gallery of Mariam">
+                        <img src="../Images/place5.jpeg" class="card-img-top" alt="Gallery of Mariam">
                         <div class="card-body">
                             <h5 class="card-title">Gallery of Mariam and Eranuhi Aslamazyan Sisters</h5>
                         </div>

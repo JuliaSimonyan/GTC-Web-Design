@@ -59,7 +59,7 @@ body {
     background-clip:padding-box;
     background-position:center center;
     color: white;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: flex-end; 
@@ -124,7 +124,115 @@ body {
     border-radius: 20px;
     padding: 0.5rem 1.5rem;
     font-weight: bold;
+    transition: background-color 1s;
 }
+.btn-plan:hover{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+ 
+}
+
+/* Navbar General Styles */
+.ml-auto {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  padding: 5px;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+/* Search Container */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: relative;
+}
+
+.search-icon:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+/* Search Input */
+.search-input {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  width: 0;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  outline: none;
+  font-size: 14px;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  background: transparent;
+  color: #ffffff;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.search-container:focus-within .search-input {
+  width: 150px;
+  opacity: 1;
+  cursor: text;
+}
+
+/* Language Dropdown */
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.language-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1000;
+  min-width: 100px;
+}
+
+.language-dropdown .dropdown-menu a {
+  display: block;
+  padding: 5px 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.language-dropdown .dropdown-menu a:hover {
+  background-color: #f4f4f4;
+}
+
+.language-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .navbar {
   top: 0;
   left: 0;
@@ -152,7 +260,7 @@ position: fixed;
 }
 
 .nav-link {
-    color: white;
+    color: white !important;
 }
 .navbar-nav .nav-item {
     margin-left: 15px; 
@@ -311,6 +419,38 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
   }
+  .see-more-link, .see-more-link-black{
+    text-decoration: none;
+    margin-right:10%;
+    font-weight: 400;
+    float: right;
+    padding-bottom: 5px;
+    margin-top: -40px;
+    transition: transform 1s ease;
+  }
+  .see-more-link {
+    color: #ffffff;
+}
+.see-more-link-black {
+  color: black;
+}
+
+.see-more-link .arrow, .see-more-link-black .arrow{
+  position: absolute;
+  right: 3px;
+  opacity: 0;
+  transition: opacity 1s ease, right 1s ease;
+}
+
+.see-more-link:hover, .see-more-link-black:hover {
+  transform: translateX(-15px);
+}
+
+
+.see-more-link:hover .arrow, .see-more-link-black:hover .arrow {
+  opacity: 1;
+  right: -20px;
+}
 
   /* Button styling */
   .btn-custom {
@@ -322,12 +462,12 @@ body {
     border-radius: 5px;
     margin-top: 20px;
   }
-
+  
   .btn-custom:hover {
     background-color: #555;
   }
   .coupon-section {
-    width: 80%;
+    width: 90%;
     height: 500px;
     margin: 0 5%;
     border-radius: 30px;

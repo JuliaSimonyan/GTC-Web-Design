@@ -98,6 +98,7 @@
     float: right;
     margin-top: -40px;
 }
+
 .ms-6 {
     margin-left: 4rem;
 }
@@ -187,6 +188,7 @@
 /* Category Tag Styles */
 .category-tag {
     position: absolute;
+    z-index: 2;
     top: 10px;
     left: 10px;
     background-color: rgba(0, 0, 0, 0.6);
