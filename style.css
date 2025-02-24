@@ -95,8 +95,28 @@ body {
   .hero-section {
       background-size: cover; /* Ensure image fully covers the container */
       background-position: center; /* Keep centered */
-      height: 50vh; /* Smaller height for mobile screens */
+      height: 100vh; /* Smaller height for mobile screens */
   }
+  .hero-content {
+    margin: 0 !important;
+  }
+  .hero-design {
+    right: -40% !important;
+  }
+  .card-overlay {
+    left: 22% !important;
+    width: 75% !important;
+  }
+  .ms-5{
+    margin-left: 0 !important;
+  }
+  .section-title1 {
+    font-size: 1.2rem !important;
+  }
+  .section-subtitle1{
+    font-size: 0.7rem !important;
+  }
+
 }
 
 
